@@ -1,0 +1,9 @@
+FROM redis:7-alpine
+
+RUN mkdir -p /usr/local/etc/redis
+COPY redis.config /usr/local/etc/redis/redis.config
+
+VOLUME ["/data"]
+
+EXPOSE 6379
+CMD ["redis-server", "/usr/local/etc/redis/redis.config"]
