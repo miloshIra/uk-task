@@ -38,7 +38,6 @@ static/
 
 local_settings.py
 .env
-.env.*
 *.env
 
 .vscode/
